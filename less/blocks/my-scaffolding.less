@@ -1,0 +1,35 @@
+html {
+	font-size: 14px;
+}
+
+
+body {
+	font-family: @font-family;
+	color: @text-color;
+	font-size: 1rem;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.06);
+}
+
+@font-face {
+	font-family: icon-font;
+	src: 	url(../fonts/icon-font/fontello.eot); /* IE9 Compat Modes */
+	src: 	url(../fonts/icon-font/fontello.eot?#iefix) format('embedded-opentype'), /* IE6-IE8 */
+			url(../fonts/icon-font/fontello.woff) format('woff'), /* Pretty Modern Browsers */
+			url(../fonts/icon-font/fontello.ttf)  format('truetype'), /* Safari, Android, iOS */
+			url(../fonts/icon-font/fontello.svg#svgFontName) format('svg'); /* Legacy iOS */
+}
+
+button {
+	background-color: transparent;
+}
+
+
+.relative {
+	position: relative;
+}
+
+.text-right {	text-align: right;}
+.text-left {	text-align: left;}
+.text-center {	text-align: center;}

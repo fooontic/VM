@@ -1,0 +1,44 @@
+.header {
+	padding: 20px 0 30px;
+
+	& .hidden-xs {
+		color: @gray;
+	}
+
+	&__mail-me span {
+		display: block;
+	}
+
+	.nav__logo {
+		margin-bottom: 30px;
+	}
+
+	.nav__social {
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media (min-width: @screen-sm-min) {
+
+	.header {
+		padding-bottom: 10px;
+
+		&__mail-me {
+			float: right;
+		}
+	}
+
+	.nav__logo, .nav__social {
+		margin-bottom: 0;
+	}
+
+	.nav__blog, .nav__social {
+		margin-top: 23px;
+	}
+
+	.nav__mail {
+		margin-top: 5px;
+	}
+}

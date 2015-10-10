@@ -1,0 +1,54 @@
+@keyframes supheaderAnimation {
+	from {
+		background-position-y: 0%;
+	}
+
+	50% {
+		background-position-y: 100%;
+	}
+
+	to {
+		background-position-y: 0;
+	}
+
+
+}
+
+.supheader {
+	
+	line-height: 0;
+	padding: 3px 0 3px;
+	background-image: url(../img/color-image.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	animation-duration: 20s;
+	animation-fill-mode: both;
+	animation-iteration-count: infinite;
+	animation-name: supheaderAnimation;
+}
+
+.lang {
+	opacity: .8;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 1em;
+	font-size: @fz-12;
+	line-height: 1.2em;
+	// color: @black;
+	// border-bottom: 1px solid fadeout(@black, 60%);
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&.active {
+		opacity: 1;
+		border-color: transparent;
+
+		&:hover {
+			cursor: default;
+			color: #fff;
+		}
+	}
+}

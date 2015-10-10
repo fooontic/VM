@@ -1,0 +1,51 @@
+.link {
+	// display: inline-block;
+	text-decoration: none;
+	color: @link;
+	border-bottom: 1px solid fadeout(@link, 60%);
+	transition: all .4s;
+
+	&:hover{
+		color: @blue;
+		border-bottom: 1px solid fadeout(@blue, 60%);
+		transition: all .1s;
+		cursor: pointer;
+	}
+
+	&--white {
+		color: #fff;
+		border-bottom: 1px solid fadeout(#fff, 60%);
+	}
+
+	&--white:hover {
+		color: lighten(@blue, 15%);
+		border-bottom: 1px solid fadeout(lighten(@blue, 10%), 60%);
+	}
+
+	&--pseudo {
+		border-bottom: 1px dashed fadeout(@link, 60%);
+	}
+
+	&--pseudo&--white:hover {
+		border-bottom: 1px dashed fadeout(lighten(@link, 10%), 60%);
+	}
+
+
+	// &--black {
+	// 	color: #000;
+	// 	border-bottom: 1px solid fadeout(black, 60%);
+
+	// 	&:hover {
+	// 		color: @red;
+	// 		border-bottom: 1px solid fadeout(@red, 40%);
+	// 	}
+	// }
+
+}
+
+
+.h2 {
+	font-weight: 100;
+	font-size: @fz-35;
+	margin: .67em 0 .5em;
+}
